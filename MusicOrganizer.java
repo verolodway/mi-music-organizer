@@ -70,4 +70,19 @@ public class MusicOrganizer
           System.out.println("El valor no es válido, el rango válido es de 0 a " + (files.size()- 1) );
       }
     }
+    
+    /**
+     * Método que devuelve un valor booleano en función de si su parámetro entero es un índice válido o no para el atributo files
+     */
+    public boolean validIndex(int index)
+    {
+        if(index >= 0 && index < files.size()) 
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }    
 }
